@@ -224,7 +224,7 @@ const Pricing = () => {
             </motion.div>
           </ScrollAnimationWrapper>
         </div> */}
-        <div className="flex flex-col w-full my-16" id="testimoni">
+        <div className="flex flex-col w-full " id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}

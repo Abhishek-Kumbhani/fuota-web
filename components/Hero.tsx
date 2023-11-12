@@ -41,7 +41,7 @@ const Hero = ({
             <p className="text-black-500 mt-4 mb-6">
               With capability to Manage multiple devices across multiple LNS and easy to upload new firmware to device in just few taps.
             </p>
-            <ButtonPrimary>Get Started</ButtonPrimary>
+            <ButtonPrimary url="https://fuota.io/dashboard">Get Started</ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>

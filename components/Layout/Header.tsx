@@ -2,9 +2,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
-import { Logo } from "../../constants/Icons";
+import { FuotaLogo, FuotaNameLogo } from "../../constants/Icons";
 
-const Header = () => {
+const Header = ({ isMobile }: any) => {
   const [activeLink, setActiveLink] = useState("");
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -21,8 +21,19 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
-            <Logo />
+          <div className="col-start-1 col-end-2 flex items-center justify-start cursor-pointer">
+            <LinkScroll
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("about");
+              }}
+            >
+              {isMobile ? <FuotaLogo /> : <FuotaNameLogo />}
+            </LinkScroll>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             <LinkScroll
@@ -61,7 +72,7 @@ const Header = () => {
             >
               Feature
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="pricing"
               spy={true}
@@ -78,7 +89,7 @@ const Header = () => {
               }
             >
               Pricing
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
               activeClass="active"
               to="testimoni"
@@ -100,12 +111,13 @@ const Header = () => {
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <Link
-              href="/"
+              href="https://fuota.io/sign-in"
+              target="_blank"
               className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-[#0a56d0] transition-all"
             >
               Sign In
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
+            <ButtonOutline url="https://fuota.io/sign-up">Sign Up</ButtonOutline>
           </div>
         </nav>
       </header>
@@ -178,7 +190,7 @@ const Header = () => {
               </svg>
               Feature
             </LinkScroll>
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="pricing"
               spy={true}
@@ -209,7 +221,7 @@ const Header = () => {
                 />
               </svg>
               Pricing
-            </LinkScroll>
+            </LinkScroll> */}
             <LinkScroll
               activeClass="active"
               to="testimoni"

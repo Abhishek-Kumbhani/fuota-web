@@ -1,4 +1,50 @@
-export const Logo = () => {
+export const FuotaLogo = () => {
+  return (
+    <svg
+      overflow="hidden"
+      version="1.1"
+      viewBox="0 0 1000 1000"
+      xmlns="http://www.w3.org/2000/svg"
+      height="40px"
+      width="100px"
+    >
+      <defs>
+        <linearGradient
+          id="a"
+          x1="554"
+          x2="1542"
+          y1="480"
+          y2="1489"
+          gradientTransform="matrix(.98 0 0 .98 410 725)"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#15acf5" offset="0" />
+          <stop stop-color="#0084eb" offset="1" />
+        </linearGradient>
+      </defs>
+      <g>
+        <rect
+          transform="translate(-946,-1178)"
+          x="946"
+          y="1428"
+          width="1e3"
+          height="600"
+          ry="59"
+          fill="#fff"
+          stroke-width="20"
+        />
+        <path
+          transform="translate(-946,-1178)"
+          d="m992 1178c-25 0-46 21-46 46v908c0 26 20 46 46 46h908c25 0 46-21 46-46v-521l-321 307-64 60-213-220v143l-88 88v-383h381l-87 88h-145l155 159 383-364v-266c0-26-20-46-46-46zm356 517v0.32l0.33-0.32z"
+          fill="url(#a)"
+          stroke-width="21"
+        />
+      </g>
+    </svg>
+  );
+};
+
+export const FuotaNameLogo = () => {
   return (
     <svg
       overflow="hidden"
@@ -6,7 +52,7 @@ export const Logo = () => {
       viewBox="0 0 4378 1e3"
       xmlns="http://www.w3.org/2000/svg"
       height="40px"
-      width={"200px"}
+      width="200px"
     >
       <defs>
         <clipPath id="b">
