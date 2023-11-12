@@ -17,7 +17,7 @@ export const getServerSideProps = (ctx: any) => {
 export default function Home({ isMobile }: any) {
   return (
     <>
-      <SeoHead title="LaslesVPN Landing Page" />
+      <SeoHead title="FUOTA.IO landing page for easy fuota session" />
       <Layout isMobile={isMobile}>
         <Hero />
         <Feature isMobile={isMobile} />

@@ -3,18 +3,18 @@ import { useRouter } from "next/router";
 
 // Default value for some meta data
 const defaultMeta = {
-  title: "LaslesVPN",
-  siteName: "LaslesVPN",
+  title: "Fuota.io",
+  siteName: "FUOTA.IO",
   description:
-    "Landing page VPN LaslesVPN Best VPN For Privacy, Country and Cheapest",
+    "Landing page Fuota.io solution for easy fuota session with device management accross multi lns.",
   // change base url of your web (without '/' at the end)
-  url: "https://next-landing-vpn.vercel.app",
+  url: "https://fuota.io",
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "https://next-landing-vpn.vercel.app/assets/card-image.png",
-  author: "Lorem Ipsum",
+  image: "https://sgp1.digitaloceanspaces.com/harimedia/vrutti/helperplace/amp/bg.jpg",
+  author: "Vrutti Technologies",
 };
 
 /**
