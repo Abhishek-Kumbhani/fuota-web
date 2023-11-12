@@ -13,7 +13,8 @@ const defaultMeta = {
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "https://sgp1.digitaloceanspaces.com/harimedia/vrutti/helperplace/amp/bg.jpg",
+  image:
+    "https://sgp1.digitaloceanspaces.com/harimedia/vrutti/helperplace/amp/bg.jpg",
   author: "Vrutti Technologies",
 };
 
@@ -50,6 +51,11 @@ const SeoHead = (props: any) => {
   return (
     <Head>
       <title>{meta.title}</title>
+      <meta
+        name="keywords"
+        content="fuota.io | device management | lorawan network | internet of things | firmware update"
+      />
+      <meta name="publisher" content={meta.author} />
       <meta name="robots" content={meta.robots} />
       <meta content={meta.description} name="description" />
       <meta property="og:url" content={`${meta.url}${router.asPath}`} />
