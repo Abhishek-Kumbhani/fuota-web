@@ -9,40 +9,40 @@ import "slick-carousel/slick/slick-theme.css";
 const Testimoni = ({
   listTestimoni = [
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Emily Johnson",
+      image: "/assets/people-2.png",
+      city: "Toronto",
+      country: "Canada",
+      rating: "5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Wow... I am very happy to share this about fuota.io, it turned out to be more than my expectations and so far there have been no problems. fuota.io always the best",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
+      name: "Aarav Patel",
+      image: "/assets/people-1.png",
+      city: "Mumbai",
+      country: "India",
       rating: "4.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "Fuota.io has really great feature and is really easy to use. I am very happy to share this about fuota.io, it turned out to be more than my expectations. fuota.io always the best",
     },
     {
-      name: "iezh Robert",
+      name: "Sofia Rodriguez",
       image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      city: "Buenos Aires",
+      country: "Argentina",
+      rating: "4",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "fuota.io had made my life easier. I can do update firmware of my devices with just a click without worrying about security concerns.",
     },
     {
-      name: "iezh Robert",
-      image: "/assets/people-3.png",
-      city: "Warsaw",
-      country: "Poland",
-      rating: "4.5",
+      name: "Carlos Garcia",
+      image: "/assets/people-1.png",
+      city: "Madrid",
+      country: "Spain",
+      rating: "3.5",
       testimoni:
-        "Wow... I am very happy to use this VPN, it turned out to be more than my expectations and so far there have been no problems. LaslesVPN always the best",
+        "fuota.io's bpt tool is incredibly easy to use. It generates the secured binary files in a few clicks, still UI/UX have much room for improvement.",
     },
   ],
 }) => {
@@ -90,7 +90,7 @@ const Testimoni = ({
       >
         {listTestimoni.map((listTestimonis, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="border-2 border-gray-500 hover:border-[#0a56d0] transition-all rounded-lg p-8 flex flex-col">
+            <div className="border-2 border-gray-500 hover:border-[#0a56d0] transition-all rounded-lg p-8 flex flex-col h-[250px]">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <Image
@@ -123,13 +123,13 @@ const Testimoni = ({
       <div className="flex w-full items-center justify-end">
         <div className="flex flex-none justify-between w-auto mt-14">
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-[#0a56d0] border hover:bg-red-100 hover:text-white-500 transition-all text-[#0a56d0] cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-[#0a56d0] border hover:bg-blue-100 hover:text-white-500 transition-all text-[#0a56d0] cursor-pointer"
             onClick={sliderRef?.slickPrev}
           >
             <ArrowBack />
           </div>
           <div
-            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-[#0a56d0] border hover:bg-red-100 hover:text-white-500 transition-all text-[#0a56d0] cursor-pointer"
+            className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-[#0a56d0] border hover:bg-blue-100 hover:text-white-500 transition-all text-[#0a56d0] cursor-pointer"
             onClick={sliderRef?.slickNext}
           >
             <ArrowNext />

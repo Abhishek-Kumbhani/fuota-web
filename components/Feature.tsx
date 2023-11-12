@@ -20,21 +20,23 @@ const feature = [
     id: 1,
     title: "Device Management across LNS",
     des: "Embrace Unparalleled IoT Solutions with FUOTA.IO. Effortlessly oversee an expansive range of devices on varied LoRaWAN networks. With FUOTA.IO, boundaries fade, and unparalleled integration meets effortless device management. Step into a world where limitless IoT connectivity becomes a reality",
+    image: "/assets/device.svg",
   },
   {
     id: 2,
     title: "Device FUOTA",
     des: "At FUOTA.IO, we blend control with top-tier security. Schedule firmware updates for your IoT devices, knowing each is delivered securely. Seamlessly create FUOTA sessions that align with your convenience and the highest security protocols. Our platform not only ensures reliability but also offers intuitive tools for effortless device management. Dive into an environment where innovation meets adaptability and trust, with your safety always at the forefront in the fast-paced world of IoT.",
+    image: "/assets/update.svg",
   },
   {
     id: 3,
     title: "Binary Preparation Tool",
     des: "Discover the power of precision with our binary preparation tool. Using our user-friendly offline desktop app, piece together your desired configurations like building a chart, then add your configuration to generate a secure binary file. Once ready, with a single click, you can upload it directly to the FUOTA.IO portal or save it offline on your computer. Elevate your tech journey, where innovation and simplicity coexist.",
+    image: "/assets/tool.svg",
   },
 ];
 
 const Feature = ({ isMobile }: any) => {
-  console.log("isMobile: ", isMobile);
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
@@ -55,7 +57,7 @@ const Feature = ({ isMobile }: any) => {
                   variants={scrollAnimation}
                 >
                   <Image
-                    src="/assets/extra_features.svg"
+                    src={feature.image}
                     alt="extra_features"
                     layout="responsive"
                     quality={100}
@@ -85,7 +87,7 @@ const Feature = ({ isMobile }: any) => {
                   variants={scrollAnimation}
                 >
                   <Image
-                    src="/assets/extra_features.svg"
+                    src={feature.image}
                     alt="extra_features"
                     layout="responsive"
                     quality={100}
