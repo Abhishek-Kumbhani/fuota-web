@@ -5,7 +5,7 @@ import ButtonOutline from "../misc/ButtonOutline.";
 import { FuotaLogo, FuotaNameLogo } from "../../constants/Icons";
 
 const Header = ({ isMobile }: { isMobile: boolean }) => {
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("about");
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
