@@ -1,6 +1,11 @@
 import React from "react";
 
-const ButtonOutline = ({ children, url }: any) => {
+interface Props {
+  children: React.ReactNode;
+  url?: string;
+}
+
+const ButtonOutline = ({ children, url }: Props) => {
   return (
     <button
       onClick={() => {

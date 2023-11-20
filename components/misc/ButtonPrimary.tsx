@@ -1,6 +1,12 @@
 import React from "react";
 
-const ButtonPrimary = ({ children, addClass, url }: any) => {
+interface Props {
+  children: React.ReactNode;
+  url?: string;
+  addClass?: string;
+}
+
+const ButtonPrimary = ({ children, addClass, url }: Props) => {
   return (
     <button
       onClick={() => {

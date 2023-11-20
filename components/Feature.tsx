@@ -37,7 +37,7 @@ const feature = [
   },
 ];
 
-const Feature = ({ isMobile }: any) => {
+const Feature = ({ isMobile }: { isMobile: boolean }) => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (

@@ -4,7 +4,7 @@ import { Link as LinkScroll } from "react-scroll";
 import ButtonOutline from "../misc/ButtonOutline.";
 import { FuotaLogo, FuotaNameLogo } from "../../constants/Icons";
 
-const Header = ({ isMobile }: any) => {
+const Header = ({ isMobile }: { isMobile: boolean }) => {
   const [activeLink, setActiveLink] = useState("");
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -117,7 +117,9 @@ const Header = ({ isMobile }: any) => {
             >
               Sign In
             </Link>
-            <ButtonOutline url="https://fuota.io/sign-up">Sign Up</ButtonOutline>
+            <ButtonOutline url="https://fuota.io/sign-up">
+              Sign Up
+            </ButtonOutline>
           </div>
         </nav>
       </header>
