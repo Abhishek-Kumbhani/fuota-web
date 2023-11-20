@@ -44,10 +44,11 @@ const Feature = ({ isMobile }: any) => {
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="feature"
     >
+      <div className="h-16" />
       {feature.map((feature) => {
         return (
           <div
-            className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 p  y-8 my-12 pt-7"
+            className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8 py-8 my-12 pt-7"
             key={feature.id}
           >
             {(isMobile || feature.id % 2 === 0) && (

@@ -1,7 +1,7 @@
 import Feature from "@/components/Feature";
 import Hero from "@/components/Hero";
 import Layout from "@/components/Layout/Layout";
-import Pricing from "@/components/Pricing";
+import Testimoni from "@/components/Testimoni";
 import SeoHead from "@/components/SeoHead";
 
 export const getServerSideProps = (ctx: any) => {
@@ -21,7 +21,7 @@ export default function Home({ isMobile }: any) {
       <Layout isMobile={isMobile}>
         <Hero />
         <Feature isMobile={isMobile} />
-        <Pricing />
+        <Testimoni />
       </Layout>
     </>
   );
