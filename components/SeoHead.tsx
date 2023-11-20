@@ -6,7 +6,7 @@ const defaultMeta = {
   title: "Fuota.io",
   siteName: "FUOTA.IO",
   description:
-    "Landing page Fuota.io solution for easy fuota session with device management accross multi lns.",
+    "Landing page Fuota.io solution for easy fuota session with device management across multi lns.",
   // change base url of your web (without '/' at the end)
   url: "https://fuota.io",
   type: "website",
@@ -68,7 +68,7 @@ const SeoHead = (props: any) => {
       <meta name="image" property="og:image" content={meta.image} />
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@F2aldi" />
+      {/* <meta name="twitter:site" content="@F2aldi" /> */}
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
@@ -88,13 +88,13 @@ const SeoHead = (props: any) => {
         <link key={linkProps.href} {...linkProps} />
       ))}
       {/* Windows 8 app icon */}
-      <meta name="msapplication-TileColor" content="#F53838" />
+      <meta name="msapplication-TileColor" content="#0a56d0" />
       <meta
         name="msapplication-TileImage"
         content="/favicon/ms-icon-144x144.png"
       />
       {/* Accent color on supported browser */}
-      <meta name="theme-color" content="#F53838" />
+      <meta name="theme-color" content="#0a56d0" />
     </Head>
   );
 };

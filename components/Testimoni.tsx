@@ -17,7 +17,7 @@ const listTestimoni = [
     country: "Canada",
     rating: "5",
     testimoni:
-      "Wow... I am very happy to share this about fuota.io, it turned out to be more than my expectations and so far there have been no problems. fuota.io always the best",
+      "Wow... I am very happy to share this about fuota.io, it turned out to be more than my expectations and so far there have been no problems. fuota.io always the best.",
   },
   {
     name: "Aarav Patel",
@@ -26,7 +26,7 @@ const listTestimoni = [
     country: "India",
     rating: "4.5",
     testimoni:
-      "Fuota.io has really great feature and is really easy to use. I am very happy to share this about fuota.io, it turned out to be more than my expectations. fuota.io always the best",
+      "Fuota.io has really great feature and is really easy to use. I am very happy to share this about fuota.io, it turned out to be more than my expectations. fuota.io always the best.",
   },
   {
     name: "Sofia Rodriguez",
@@ -141,7 +141,7 @@ const Testimoni = () => {
                           </div>
                         </div>
                         <p className="mt-5 text-left">
-                          “{listTestimonis.testimoni}”.
+                          “{listTestimonis.testimoni}”
                         </p>
                       </div>
                     </div>
@@ -178,7 +178,7 @@ const Testimoni = () => {
                 <ButtonPrimary>Get Started</ButtonPrimary>
               </div>
               <div
-                className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
+                className="absolute bg-black-600 opacity-5 w-11/12 rounded-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
                 style={{ filter: "blur(114px)" }}
               ></div>
             </motion.div>
