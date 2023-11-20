@@ -6,7 +6,7 @@
   "display": "standalone",
   "background_color": "#FFFFFF",
   "theme_color": "#0a56d0",
-  "description": "Landing page Fuota.io solution for easy fuota session with device management accross multi lns.",
+  "description": "Landing page Fuota.io solution for easy fuota session with device management across multi lns.",
   "icons": [
     {
       "src": "/favicon.ico",
