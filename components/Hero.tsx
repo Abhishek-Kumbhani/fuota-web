@@ -28,7 +28,7 @@ const Hero = ({
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (
-    <div className="max-w-screen-xl mt-24 px-8 xl:px-16 mx-auto" id="about">
+    <div className="max-w-screen-xl px-8 xl:px-16 mx-auto" id="about">
       <ScrollAnimationWrapper>
         <motion.div
           className="grid grid-flow-row sm:grid-flow-col grid-rows-2 md:grid-rows-1 sm:grid-cols-2 gap-8 py-6 sm:py-16"
@@ -39,9 +39,12 @@ const Hero = ({
               Firmware update to be easy with <strong>FUOTA.IO</strong>.
             </h1>
             <p className="text-black-500 mt-4 mb-6">
-              With capability to Manage multiple devices across multiple LNS and easy to upload new firmware to device in just few taps.
+              With capability to Manage multiple devices across multiple LNS and
+              easy to upload new firmware to device in just few taps.
             </p>
-            <ButtonPrimary url="https://fuota.io/dashboard">Get Started</ButtonPrimary>
+            <ButtonPrimary url="https://fuota.io/dashboard">
+              Get Started
+            </ButtonPrimary>
           </div>
           <div className="flex w-full">
             <motion.div className="h-full w-full" variants={scrollAnimation}>
