@@ -3,6 +3,7 @@ import React, { useMemo } from "react";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
+import { Check } from "@/constants/Icons";
 
 const extraFeatures = [
   "Multiple LNS Support",
@@ -19,19 +20,19 @@ const feature = [
   {
     id: 1,
     title: "Device Management across LNS",
-    des: "Embrace Unparalleled IoT Solutions with FUOTA.IO. Effortlessly oversee an expansive range of devices on varied LoRaWAN networks. With FUOTA.IO, boundaries fade, and unparalleled integration meets effortless device management. Step into a world where limitless IoT connectivity becomes a reality",
+    des: "Embrace Unparalleled IoT Solutions with FUOTA.IO. Effortlessly oversee an expansive range of devices on varied <strong>LoRaWAN networks</strong>. With FUOTA.IO, boundaries fade, and unparalleled integration meets <strong>effortless device management</strong>. Step into a world where limitless IoT connectivity becomes a reality",
     image: "/assets/device.svg",
   },
   {
     id: 2,
     title: "Device FUOTA",
-    des: "At FUOTA.IO, we blend control with top-tier security. Schedule firmware updates for your IoT devices, knowing each is delivered securely. Seamlessly create FUOTA sessions that align with your convenience and the highest security protocols. Our platform not only ensures reliability but also offers intuitive tools for effortless device management. Dive into an environment where innovation meets adaptability and trust, with your safety always at the forefront in the fast-paced world of IoT.",
+    des: "At FUOTA.IO, we blend control with <strong>top-tier security</strong>. Schedule firmware updates for your IoT devices, knowing each is delivered securely. Seamlessly create <strong>FUOTA sessions</strong> that align with your convenience and the highest security protocols. Our platform not only ensures reliability but also offers intuitive tools for effortless device management. Dive into an environment where innovation meets adaptability and trust, with your safety always at the forefront in the fast-paced world of IoT.",
     image: "/assets/update.svg",
   },
   {
     id: 3,
     title: "Binary Preparation Tool",
-    des: "Discover the power of precision with our binary preparation tool. Using our user-friendly offline desktop app, piece together your desired configurations like building a chart, then add your configuration to generate a secure binary file. Once ready, with a single click, you can upload it directly to the FUOTA.IO portal or save it offline on your computer. Elevate your tech journey, where innovation and simplicity coexist.",
+    des: "Discover the power of precision with our <strong>binary preparation tool</strong>. Using our user-friendly <strong>offline desktop app</strong>, piece together your desired configurations like building a chart, then add your configuration to <strong>generate a secure binary file</strong>. Once ready, with a single click, you can upload it directly to the FUOTA.IO portal or save it offline on your computer. Elevate your tech journey, where innovation and simplicity coexist.",
     image: "/assets/tool.svg",
   },
 ];
@@ -44,7 +45,7 @@ const Feature = ({ isMobile }: any) => {
       className="max-w-screen-xl mt-8 mb-6 sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto"
       id="feature"
     >
-      <div className="h-16" />
+      <div className="h-0 lg:h-16 md:h-12" />
       {feature.map((feature) => {
         return (
           <div
@@ -75,9 +76,10 @@ const Feature = ({ isMobile }: any) => {
                 <h3 className="text-3xl lg:text-4xl font-medium leading-relaxed text-black">
                   {feature.title}
                 </h3>
-                <ul className="text-black-500 self-start list-inside pt-5">
-                  {feature.des}
-                </ul>
+                <ul
+                  className="text-black self-start list-inside pt-5 tracking-wider"
+                  dangerouslySetInnerHTML={{ __html: feature.des }}
+                />
               </motion.div>
             </ScrollAnimationWrapper>
             {!isMobile && feature.id % 2 === 1 && (
@@ -125,7 +127,7 @@ const Feature = ({ isMobile }: any) => {
             <ul className="text-black-500 self-start list-inside pt-1">
               {extraFeatures.map((feature, index) => (
                 <motion.li
-                  className="hover:font-medium pt-2"
+                  className="hover:font-medium pt-2 flex gap-3"
                   custom={{ duration: 1 + index }}
                   variants={scrollAnimation}
                   key={feature}
@@ -136,6 +138,7 @@ const Feature = ({ isMobile }: any) => {
                     },
                   }}
                 >
+                  <Check />
                   {feature}
                 </motion.li>
               ))}

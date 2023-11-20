@@ -10,9 +10,9 @@ function Footer() {
   return (
     <div className="bg-white-300 pt-44 pb-24">
       <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-4 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-2 sm:grid-cols-12 gap-4">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
+        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start pt-10 lg:pt-0 px-10 lg:px-0">
           <FuotaNameLogo />
-          <p className="mb-4 ml-3 mt-5">
+          <p className="mb-4 ml-3 mt-5 w-full">
             <strong className="font-medium">Fuota.IO</strong> is a service that
             has unique features for users and maintain highest possible security
             for their data.

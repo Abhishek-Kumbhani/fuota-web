@@ -17,7 +17,7 @@ export const getServerSideProps = (ctx: any) => {
 export default function Home({ isMobile }: any) {
   return (
     <>
-      <SeoHead title="FUOTA.IO landing page for easy fuota session" />
+      <SeoHead title="FUOTA.IO | Easy FUOTA sessions with LNS Management" />
       <Layout isMobile={isMobile}>
         <Hero />
         <Feature isMobile={isMobile} />
