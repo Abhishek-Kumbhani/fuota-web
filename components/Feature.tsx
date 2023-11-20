@@ -60,7 +60,6 @@ const Feature = ({ isMobile }: any) => {
                   <Image
                     src={feature.image}
                     alt="extra_features"
-                    layout="responsive"
                     quality={100}
                     height={414}
                     width={508}
@@ -90,7 +89,6 @@ const Feature = ({ isMobile }: any) => {
                   <Image
                     src={feature.image}
                     alt="extra_features"
-                    layout="responsive"
                     quality={100}
                     height={414}
                     width={508}
@@ -107,7 +105,6 @@ const Feature = ({ isMobile }: any) => {
             <Image
               src="/assets/extra_features.svg"
               alt="extra_features"
-              layout="responsive"
               quality={100}
               height={414}
               width={508}
@@ -129,7 +126,7 @@ const Feature = ({ isMobile }: any) => {
               {extraFeatures.map((feature, index) => (
                 <motion.li
                   className="hover:font-medium pt-2"
-                  custom={{ duration: 2 + index }}
+                  custom={{ duration: 1 + index }}
                   variants={scrollAnimation}
                   key={feature}
                   whileHover={{

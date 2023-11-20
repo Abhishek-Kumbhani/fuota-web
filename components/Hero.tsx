@@ -54,7 +54,6 @@ const Hero = ({
                 quality={100}
                 width={600}
                 height={383}
-                layout="responsive"
               />
             </motion.div>
           </div>
